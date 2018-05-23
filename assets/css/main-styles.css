@@ -1,0 +1,53 @@
+body{
+	font-family: 'Oxygen', sans-serif;
+	color: #8d99ae;
+}
+#page-navbar.navbar
+{
+	padding-top: 0;
+	padding-bottom: 0;
+	/*margin-bottom: 20px;*/
+}
+
+#main-body
+{
+	min-height: 1000px;
+}
+
+#home .jumbotron-fluid
+{
+	padding: 0px;
+}
+
+.details
+{
+	background: #8d99ae;
+	margin-bottom: 20px;
+	color: #EDF2F4;
+}
+
+.page-parts
+{
+	min-height: 700px;
+}
+
+@media (min-width: 575.99px) {
+	#mainMenu .nav-item
+	{
+		padding: 7px;
+	}
+	#mainMenu .fas, #mainMenu .nav-text
+	{
+		font-size: 24px;
+	}
+
+}
+
+@media (max-width: 575.98px) {
+	#mainMenu .fas, #mainMenu .nav-text
+	{
+		font-size: 14px;
+		padding-right: 10px;
+	}
+
+}
