@@ -32,6 +32,7 @@ body{
 
 .page-parts{
 	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 .page-parts:nth-child(1){
@@ -40,11 +41,39 @@ body{
 
 .section-title, .section-links {
 	font-size: 1.1rem;
-	text-transform: uppercase;
 }
 
-.section-body {
-	text-align: justify;
+.section-body .title {
+	/*text-align: justify;*/
+	text-shadow: 1px 1px 3px #ead7ff;
+    font-size: 1.5em;
+}
+
+.section-body .title .miraj-icon {
+	background: url('../images/icons/miraj-icon.jpg') no-repeat;
+}
+
+.section-body p {
+	margin-bottom: 0.1rem;
+}
+
+.section-body .project-heading {
+	font-size: 1.2em;
+	color: #0062cc;
+}
+.section-body .project-details {
+	font-size: 1em;
+	color: #d0d0d0;
+}
+
+.section-body .dropdown-divider {
+    width: 50%;
+    margin-right: auto;
+}
+
+.section-body .dropdown-divider.project-end-divider,
+.section-body .dropdown-divider.designation-divider{
+	width: 100%;
 }
 
 .section-links {
@@ -55,6 +84,10 @@ body{
 	font-weight: 600;
 	text-decoration: none;
 	color: #ff4c65;
+}
+
+.section-durations i{
+	width: 20px;
 }
 
 
