@@ -45,16 +45,16 @@ $(document).ready(function(){
     $("[href=\"#"+id+"\"]").addClass('active');    
   });
 
+  //-----------min-height of each section
+  var windowHeight = $(window)[0].innerHeight - $('#page-navbar')[0].clientHeight;
+  $('.page-parts').css("min-height",windowHeight);
+
   //----------- on click redirect to the section
   $('.nav-link').click(function(){
-    // console.log($(this));
     var id = $(this)[0].hash;
     var scrollTopHeight = $(id).offset().top - $('#page-navbar')[0].clientHeight;
-    console.log(scrollTopHeight);
-    console.log( $(id).offset().top);
     $('html,body').animate({scrollTop: scrollTopHeight},'slow');
   });
 
-  //-----------min-height of each section
-  //$(window)[0].innerHeight
+
 });

@@ -12,7 +12,10 @@ body{
 #main-body
 {
 	min-height: 1000px;
+	overflow-y: auto;
 }
+
+
 
 #home .jumbotron-fluid
 {
@@ -28,9 +31,18 @@ body{
 
 .page-parts
 {
-	min-height: 700px;
+	min-height: 100px;
 }
 
+.page-parts:nth-child(odd) {
+	background: #343a40;
+}
+
+#resume.page-parts{
+	padding-top: 50px;
+}
+
+/*-----Media query------*/
 @media (min-width: 575.99px) {
 	#mainMenu .nav-item
 	{
@@ -51,3 +63,26 @@ body{
 	}
 
 }
+/*-----Media query ends here------*/
+
+/*-----scrollbar css----*/
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: transparent;
+}
+
+body::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #000;
+}
+/*----scrollbar css ends here-----*/
