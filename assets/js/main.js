@@ -6,10 +6,12 @@ $(document).ready(function(){
   var navBarHeight = $('#page-navbar')[0].clientHeight + navBarMargin;
   
   $('#main-body').css('margin-top',$('#page-navbar')[0].clientHeight);
-
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-  })
+  var screenWidth = window.innerWidth;
+  if(screenWidth > 575.98) {
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    });
+  }
 
   // The user scrolls
   $(window).scroll(function(){
@@ -53,8 +55,14 @@ $(document).ready(function(){
   $('.nav-link').click(function(){
     var id = $(this)[0].hash;
     var scrollTopHeight = $(id).offset().top - $('#page-navbar')[0].clientHeight;
-    $('html,body').animate({scrollTop: scrollTopHeight},'slow');
+    var screenWidth = window.innerWidth;
+    if(screenWidth < 575.98) {
+      scrollTopHeight += $('#mainMenu')[0].clientHeight;
+      $('html,body').animate({scrollTop: scrollTopHeight},'slow');
+      $('#mainMenu').collapse('hide');
+    }
+    else {
+      $('html,body').animate({scrollTop: scrollTopHeight},'slow');
+    }
   });
-
-
 });

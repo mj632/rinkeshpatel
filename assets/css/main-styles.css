@@ -15,18 +15,9 @@ body{
 	overflow-y: auto;
 }
 
-
-
 #home .jumbotron-fluid
 {
 	padding: 0px;
-}
-
-.details
-{
-	background: #8d99ae;
-	margin-bottom: 20px;
-	color: #EDF2F4;
 }
 
 .page-parts
@@ -36,11 +27,39 @@ body{
 
 .page-parts:nth-child(odd) {
 	background: #343a40;
+	color: #fff;
 }
 
-#resume.page-parts{
+.page-parts{
 	padding-top: 50px;
 }
+
+.page-parts:nth-child(1){
+	padding-top: 0;
+}
+
+.section-title, .section-links {
+	font-size: 1.1rem;
+	text-transform: uppercase;
+}
+
+.section-body {
+	text-align: justify;
+}
+
+.section-links {
+	color: #ff4c65;
+}
+
+.section-links:hover {
+	font-weight: 600;
+	text-decoration: none;
+	color: #ff4c65;
+}
+
+
+
+
 
 /*-----Media query------*/
 @media (min-width: 575.99px) {
@@ -60,6 +79,7 @@ body{
 	{
 		font-size: 14px;
 		padding-right: 10px;
+		min-width: 30px;
 	}
 
 }
