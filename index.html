@@ -14,12 +14,16 @@
 	<script type="text/javascript" src="./assets/js/popper.min.js"></script>
 	<script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="./assets/js/main.js"></script>
+	<script type="text/javascript" src="./assets/js/highcharts.js"></script>
+	<script src="https://code.highcharts.com/highcharts-more.js"></script>
+	<script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+
 
 </head>
 <body>
 	<nav id="page-navbar" class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
 		<div class="container">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+			<button id="nav-toggle-btn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse justify-content-center" id="mainMenu">
@@ -47,6 +51,12 @@
 						<a class="nav-link" href="#skills" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<em>Knowledge of</em>">
 							<i class="fas fa-cogs"></i>
 							<span class="nav-text d-inline d-sm-none"> Having knowledge of</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#portfolio" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<em>Developed before</em>">
+							<i class="fas fa-book"></i>
+							<span class="nav-text d-inline d-sm-none"> Developed before</span>
 						</a>
 					</li>
 					<li class="nav-item">
@@ -95,7 +105,6 @@
 								</a>
 							</h6>
 						</div>
-
 					</div><!--/.row -->
 				</div><!--/.container -->
 			</div>
@@ -390,9 +399,151 @@
 			</div>	<!--======Third part skills ends here =====-->
 
 			<div class="page-parts col-12" id="skills">	<!--======Forth part skills =====-->
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3">
+							<div class="float-lg-right">
+								<span class="section-title align-middle text-uppercase">
+									<strong>Skills</strong>
+								</span>
+							</div>
+						</div>
+						<div class="col-md-6 section-body">
+							<div class="row">
+								<div class="col-6 col-lg-4" id="Siemens-NX-container"></div>
+								<div class="col-6 col-lg-4" id="SolidWorks-container"></div>
+								<div class="col-6 col-lg-4" id="CREO-container"></div>
+								<div class="col-6 col-lg-4" id="CATIA-container"></div>
+								<div class="col-6 col-lg-4" id="DFM-container"></div>
+								<div class="col-6 col-lg-4" id="Arduino-container"></div>
+								<div class="col-6 col-lg-4" id="3DPrinting-container"></div>
+								<div class="col-6 col-lg-4" id="Photoshop-container"></div>
+								<div class="col-6 col-lg-4" id="Microsoft-Office-container"></div>
+							</div>
+						</div>
+					</div><!--/.row -->
+				</div><!--/.container -->
 			</div>	<!--======Forth part skills ends here=====-->
 
+			<div class="page-parts col-12" id="portfolio">	<!--======Fifth part Contact =====-->
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3">
+							<div class="float-lg-right">
+								<span class="section-title align-middle text-uppercase">
+									<strong>Portfolio</strong>
+								</span>
+							</div>
+						</div>
+						<div class="col-md-9 section-body">
+							<div class="portfolio-body row">
+								<div class="col-md-8">
+									<img src="./assets/images/port02.jpg" class="img-fluid mx-auto d-block" width="100%">
+								</div>
+								<div class="col-md-4">
+									<p class="font-italic">
+										<span class="d-none miraj-icon">
+											<img src="./assets/images/icons/miraj-icon.jpg" class="rounded-circle img-fluid">	
+										</span>
+										<strong class="title">SEMI-AUTOMATED BLOOD COMPONENT EXTRACTOR</strong> 
+									</p>
+									<p class="font-weight-light">
+										<span class="project-details">
+											Machine is patented by client Omprakash Benival by himself. The multi programed & reliable mechanism covered by a user-friendly machine body, working on fully Mechatronics concept used for Separation of plasma cell from blood that will be stored by blood bank further.
+										</span><br>
+										<!-- <a href="#" class="badge badge-pill badge-info"> -->
+											<small>
+												<i class="fas fa-tags align-middle"></i> Product design 
+												<i class="fas fa-tags align-middle"></i> Body design
+											</small>
+										<!-- </a> -->
+									</p>
+								</div>
+							</div>	<!-- Image port02 ends here -->
+							<div class="dropdown-divider d-block d-sm-none"></div>
+							<div class="portfolio-body row">
+								<div class="col-md-8">
+									<img src="./assets/images/port03.jpg" class="img-fluid mx-auto d-block" width="100%">
+								</div>
+								<div class="col-md-4">
+									<p class="font-italic">
+										<span class="d-none miraj-icon">
+											<img src="./assets/images/icons/miraj-icon.jpg" class="rounded-circle img-fluid">	
+										</span>
+										<strong class="title">Peristaltic Pump</strong> 
+									</p>
+									<p class="font-weight-light">
+										<span class="project-details">
+											A small component, used in Roti-Star machine. It is a perfect medical technology level component to dispense & metered any suitable fluid by generating pressure in flexible tube. 
+										</span><br>
+										<!-- <a href="#" class="badge badge-pill badge-info"> -->
+											<small>
+												<i class="fas fa-tags align-middle"></i> mechanism 
+												<i class="fas fa-tags align-middle"></i> medical component
+												<i class="fas fa-tags align-middle"></i> rendering
+											</small>
+										<!-- </a> -->
+									</p>
+								</div>
+							</div>	<!-- Image port03 ends here -->
+						</div>
+
+					</div><!--/.row -->
+				</div><!--/.container -->
+			</div>	<!--======Fifth part Contact ends here =====-->
+
 			<div class="page-parts col-12" id="contactUs">	<!--======Fifth part Contact =====-->
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3">
+							<div class="float-lg-right">
+								<span class="section-title align-middle text-uppercase">
+									<strong>Contact me</strong>
+								</span>
+							</div>
+						</div>
+						<div class="col-md-6 section-body">
+							<p class="font-weight-light">
+								<span class="font-weight-bold project-heading">Email </span><br>
+								<span class="font-weight-bold">
+									rinkeshpatel44@gmail.com
+								</span>
+							</p><br>
+							<p class="font-weight-light">
+								<span class="font-weight-bold project-heading">Address </span><br>
+								<span class="font-weight-bold">
+									Hamilton, ON, Canada
+								</span>
+							</p><br>
+							<p class="font-weight-light">
+								<span class="font-weight-bold project-heading">Skype </span><br>
+								<span class="font-weight-bold">
+									rinkeshpatel44
+								</span>
+							</p>
+						</div>
+						<div class="col-md-3 section-links">
+							<small>
+								SOCIAL LINKS
+							</small><br>
+							<span class="font-weight-bold media-link">
+								<a href="#"><i class="fab fa-youtube"></i></a>
+							</span>
+							<span class="font-weight-bold media-link">
+								<a href="#"><i class="fab fa-facebook"></i></a>
+							</span>
+							<span class="font-weight-bold media-link">
+								<a href="#"><i class="fab fa-linkedin"></i></a>
+							</span>
+							<span class="font-weight-bold media-link">
+								<a href="#"><i class="fab fa-instagram"></i></a>
+							</span>
+							<span class="font-weight-bold media-link">
+								<a href="#"><i class="fab fa-twitter-square"></i></a>
+							</span>
+						</div>
+					</div>	<!-- row ends here -->
+				</div>
 			</div>	<!--======Fifth part Contact ends here =====-->
 		</div>
 

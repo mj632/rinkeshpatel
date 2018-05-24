@@ -72,7 +72,8 @@ body{
 }
 
 .section-body .dropdown-divider.project-end-divider,
-.section-body .dropdown-divider.designation-divider{
+.section-body .dropdown-divider.designation-divider,
+.section-body .dropdown-divider.d-block.d-sm-none{
 	width: 100%;
 }
 
@@ -90,6 +91,13 @@ body{
 	width: 20px;
 }
 
+.portfolio-body {
+	margin-bottom: 10px;
+}
+
+.section-links .media-link{
+	font-size: 40px;
+}
 
 
 
