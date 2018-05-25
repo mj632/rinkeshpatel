@@ -2,7 +2,7 @@ $(document).ready(function(){
 //-----------------THIS IS FOR ALL SNIPPET PART
 	var resumeSnippetLink = "../../snippets/resume-snippet.html";
 	var sectionTitleSnippetHtml = "../../snippets/section-title-snippet.html";
-	var experienceSnippetJsonLink = "../assets/data/resume.json";
+	var experienceSnippetJsonLink = "../../assets/data/resume.json";
 	var experienceCategorySnippetLink = "../../snippets/education-category-snippet.html";
 	var workexCatSnippetLink = "../../snippets/work-experience-category-snippet.html";
 	var projectsSnippetLink = "../../snippets/project-details-snippet.html";
