@@ -1,8 +1,18 @@
 $(document).ready(function(){
 //-----------------THIS IS FOR ALL SNIPPET PART
+	// var experienceSnippetJsonLink = "/rinkeshpatel/assets/data/resume.json";		//=====Only for GitHub
+	// var resumeSnippetLink = "/rinkeshpatel/snippets/resume-snippet.html";
+	// var sectionTitleSnippetHtml = "/rinkeshpatel/snippets/section-title-snippet.html";
+	// var experienceCategorySnippetLink = "/rinkeshpatel/snippets/education-category-snippet.html";
+	// var workexCatSnippetLink = "/rinkeshpatel/snippets/work-experience-category-snippet.html";
+	// var projectsSnippetLink = "/rinkeshpatel/snippets/project-details-snippet.html";
+	// var awardsSnippetLink = "/rinkeshpatel/snippets/award-details-snippet.html";
+	// var porfolioSnippetLink = "/rinkeshpatel/snippets/portfolio-snippet.html";
+
+//======For other than github part
 	var resumeSnippetLink = "../../snippets/resume-snippet.html";
 	var sectionTitleSnippetHtml = "../../snippets/section-title-snippet.html";
-	var experienceSnippetJsonLink = "../assets/data/resume.json";
+	var experienceSnippetJsonLink = "../../assets/data/resume.json";		//=====Only for all other case
 	var experienceCategorySnippetLink = "../../snippets/education-category-snippet.html";
 	var workexCatSnippetLink = "../../snippets/work-experience-category-snippet.html";
 	var projectsSnippetLink = "../../snippets/project-details-snippet.html";
