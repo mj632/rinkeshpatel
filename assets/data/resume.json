@@ -3,6 +3,7 @@
 	{
 		"sectionTitle":"About",
 		"id":"#resume-section",
+		"faTagName":"fas fa-pencil-alt",
 		"details":"Well, I have completed Bachelors degree in Mechanical Engineering and having 2 years of experience of Research and Development in Part Designing, Product Designing and Body Design. During the work period, I learned abilities to communicate with various types of manufacturers of Indian regions, problem solving skills, alternative designing solutions skills and various kind of manufacturing process that helps to optimize the entire designs.",
 		"resumeLink":"#"
 	},
@@ -11,6 +12,7 @@
 		"category":"Education",
 		"id":"#education-section",
 		"categoryDetailsID": "#education-category-details",
+		"faTagName":"fas fa-graduation-cap",
 		"categoryDetails": [{
 								"name":"B.Tech in Mechanical Engineering",
 								"timeDuration":"AUG 2010 - JUN 2014",
@@ -28,6 +30,7 @@
 		"category":"Work Experience",
 		"id":"#work-section",
 		"categoryDetailsID": "#work-category-details",
+		"faTagName":"fas fa-briefcase",
 		"categoryDetails": [{
 								"companyName":"Miraj Group",
 								"location":"Nathdwara, Rajasthan",
@@ -89,6 +92,7 @@
 		"category":"AWARDS",
 		"id":"#awards-section",
 		"categoryDetailsID": "#awards-category-details",
+		"faTagName":"fas fa-trophy",
 		"categoryDetails": [{
 								"eventType":"Poster Presentation",
 								"eventName":"Institute Festival 2011",
@@ -113,6 +117,7 @@
 		"sectionTitle":"PORTFOLIO",
 		"id":"#portfolio-section",
 		"portfolioListID":"#portfolio-list-section",
+		"faTagName":"fas fa-book",
 		"portfolioList":
 		[{
 			"projectName":"SEMI-AUTOMATED BLOOD COMPONENT EXTRACTOR",

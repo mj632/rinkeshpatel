@@ -3,7 +3,7 @@ $(document).ready(function(){
 	var resumeSnippetLink = "../../snippets/resume-snippet.html";
 	var sectionTitleSnippetHtml = "../../snippets/section-title-snippet.html";
 	var experienceSnippetJsonLink = "../assets/data/resume.json";
-	var experienceCategorySnippetLink = "../../snippets/experience-category-snippet.html";
+	var experienceCategorySnippetLink = "../../snippets/education-category-snippet.html";
 	var workexCatSnippetLink = "../../snippets/work-experience-category-snippet.html";
 	var projectsSnippetLink = "../../snippets/project-details-snippet.html";
 	var awardsSnippetLink = "../../snippets/award-details-snippet.html";
@@ -128,6 +128,7 @@ $(document).ready(function(){
 							+ '<div class="col-md-9 section-body" id="'+portfolioListID.substring(1)+'"></div>'
 							+ '</div>';
 		finalCatHtml = insertProperty(finalCatHtml, "category", portfolioCat.sectionTitle);
+		finalCatHtml = insertProperty(finalCatHtml, "faTagName", portfolioCat.faTagName);
 		insertHtml(id,finalCatHtml);
 		$ajaxUtils.sendGetRequest(porfolioSnippetLink,
 									function(porfolioSnippetHtml) {
@@ -151,7 +152,9 @@ $(document).ready(function(){
 								+ '<div class="col-md-9 section-body" id="'+categoryDetailsID.substring(1)+'"></div>'
 								+ '</div>';
 			finalCatHtml = insertProperty(finalCatHtml, "category", experienceCat[i].category);
+			finalCatHtml = insertProperty(finalCatHtml, "faTagName", experienceCat[i].faTagName);
 			insertHtml(id,finalCatHtml);
+			// var iTagIcon = '<i class="fas fa-graduation-cap"></i>';
 		}
 		$ajaxUtils.sendGetRequest(experienceCategorySnippetLink,
 							function(experienceCategorySnippetHtml) {
@@ -184,9 +187,8 @@ $(document).ready(function(){
 		finalCatHtml = insertProperty(finalCatHtml, "sectionTitle", resumeCat.sectionTitle);
 		finalCatHtml = insertProperty(finalCatHtml, "details", resumeCat.details);
 		finalCatHtml = insertProperty(finalCatHtml, "resumeLink", resumeCat.resumeLink);
+		finalCatHtml = insertProperty(finalCatHtml, "faTagName", resumeCat.faTagName);
 		insertHtml(id,finalCatHtml);
-
-
 	};
 
 	var buildAndShowExperienceHTML = function(jsonData) {
