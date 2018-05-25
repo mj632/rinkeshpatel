@@ -1,0 +1,144 @@
+{
+	"resume":
+	{
+		"sectionTitle":"About",
+		"id":"#resume-section",
+		"faTagName":"fas fa-pencil-alt",
+		"details":"Well, I have completed Bachelors degree in Mechanical Engineering and having 2 years of experience of Research and Development in Part Designing, Product Designing and Body Design. During the work period, I learned abilities to communicate with various types of manufacturers of Indian regions, problem solving skills, alternative designing solutions skills and various kind of manufacturing process that helps to optimize the entire designs.",
+		"resumeLink":"#"
+	},
+	"experience":
+	[{
+		"category":"Education",
+		"id":"#education-section",
+		"categoryDetailsID": "#education-category-details",
+		"faTagName":"fas fa-graduation-cap",
+		"categoryDetails": [{
+								"name":"B.Tech in Mechanical Engineering",
+								"timeDuration":"AUG 2010 - JUN 2014",
+								"place":"Rajasthan Technical University, Kota",
+								"details":""
+							},
+							{
+								"name":"Deploma in Mechanical CAD",
+								"timeDuration":"MAR 2013 - MAY 2013",
+								"place":"CADD DESC, Udaipur",
+								"details":""
+							}]
+	},
+	{
+		"category":"Work Experience",
+		"id":"#work-section",
+		"categoryDetailsID": "#work-category-details",
+		"faTagName":"fas fa-briefcase",
+		"categoryDetails": [{
+								"companyName":"Miraj Group",
+								"location":"Nathdwara, Rajasthan",
+								"duration": "DEC 2015 - JUN 2017",
+								"workedOn":
+								[{
+									"projectName":"Miraj Roti Master",
+									"timeDuration":"DEC 2015 - JUN 2017",
+									"designation":"Mechanical Design Engineer",
+									"details":"Miraj Roti Master is a Mechatronics based Home Appliance machine & a latest version of Miraj Roti Star, owned and patented by Miraj Group (Nathdwara, Rajasthan), that make Indian Roties automatically, a roti per minute.\nI am working as a Design Engineer, also leading the assembly line of manufacturing process of the project .",
+									"isUrl":true,
+									"url":"#"
+								}]
+							},
+							{
+								"companyName":"Walnut Innovations",
+								"location":"Udaipur, Rajasthan",
+								"duration": "DEC 2013 - SEPT 2015",
+								"workedOn":
+								[{
+									"projectName":"Miraj Roti Master",
+									"timeDuration":"DEC 2013 - SEPT 2015",
+									"designation":"Mechanical Design Engineer",
+									"details":"Miraj Roti Star is a Mechatronics based Home Appliance machine owned and patented by Miraj Group (Nathdwara, Rajasthan), that make Indian Roties automatically, a roti per minute.\nI completed my role as a product designer on this project, design & simulate every inside parts based on DFM, DFA & lowest manufacturing cost, as well as design the outer Body of Roti Star.",
+									"isUrl":true,
+									"url":"#"
+								},
+								{
+									"projectName":"Semi-Automated Blood Component Extractor",
+									"timeDuration":"OCT 2014 – MAR 2015",
+									"designation":"Mechanical Design Engineer",
+									"details":"Machine is patented for Separation of plasma cell from blood with two manually operated peristaltic valve working on fully Mechatronics concept.\nR&D of machine for customization & perfect replacement of old mechanism, parts, material & design the outer Body."
+								},
+								{
+									"projectName":"GSM Module Remote (Android Mobile Application)",
+									"timeDuration":"MAY 2015 - JULY 2015",
+									"designation":"Android Application Developer - Freelance",
+									"details":"A mobile application to control the GSM Switch (A product of Walnut Innovations) to access the appliances, equipment or heavy machinery remotely by SMS & Call facilities with just few taps.",
+									"isUrl":true,
+									"url":"#"
+								}]
+							},
+							{
+								"companyName":"Hindustan Dorr-Oliver Ltd.",
+								"location":"Ahmedabad, Gujarat",
+								"duration": "JUN 2013 - JULY 2013",
+								"workedOn":
+								[{
+									"projectName":"Heat Exchanger",
+									"timeDuration":"DEC 2015 - JUN 2017",
+									"designation":"Project Management - Intern",
+									"details":"Completed internship training in reading the 2D drafting files & manage the complete manufacturing process according to design given by Design Dept.",
+									"isUrl":false,
+									"url":"#"
+								}]
+							}]
+	},
+	{
+		"category":"AWARDS",
+		"id":"#awards-section",
+		"categoryDetailsID": "#awards-category-details",
+		"faTagName":"fas fa-trophy",
+		"categoryDetails": [{
+								"eventType":"Poster Presentation",
+								"eventName":"Institute Festival 2011",
+								"eventDate":"AUG 2011",
+								"eventDetails":"Design a poster using Photoshop on \"Arduino & How it Works\" & won a seminar competition."
+							},
+							{
+								"eventType":"Painting",
+								"eventName":"Swarnim Gujarat Festival",
+								"eventDate":"FEB 2009",
+								"eventDetails":"Secured 3rd position among students of whole Jamnagar District of State Gujarat."
+							},
+							{
+								"eventType":"Painting",
+								"eventName":"Jawahar Navodaya Vidyalaya Samiti, Pune",
+								"eventDate":"MAY 2006",
+								"eventDetails":"Secured 2nd position among All the JNVs under PUNE Region in Painting."
+							}]
+	}],
+	"portfolio":
+	{
+		"sectionTitle":"PORTFOLIO",
+		"id":"#portfolio-section",
+		"portfolioListID":"#portfolio-list-section",
+		"faTagName":"fas fa-book",
+		"portfolioList":
+		[{
+			"projectName":"SEMI-AUTOMATED BLOOD COMPONENT EXTRACTOR",
+			"projectDetails":"Machine is patented by client Omprakash Benival by himself. The multi programed & reliable mechanism covered by a user-friendly machine body, working on fully Mechatronics concept used for Separation of plasma cell from blood that will be stored by blood bank further.",
+			"projectImgLink":"./assets/images/port02.jpg",
+			"tagsID": "#tag-1",
+			"tags": [
+					 "Product design",
+					 "Body design"
+					]
+		},
+		{
+			"projectName":"Peristaltic Pump",
+			"projectDetails":"A small component, used in Roti-Star machine. It is a perfect medical technology level component to dispense & metered any suitable fluid by generating pressure in flexible tube.",
+			"projectImgLink":"./assets/images/port03.jpg",
+			"tagsID": "#tag-2",
+			"tags": [
+					 "mechanism",
+					 "medical component",
+					 "rendering"
+					]
+		}]
+	}
+}
