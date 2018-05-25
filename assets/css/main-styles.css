@@ -1,3 +1,11 @@
+/*
+	h1---> main heading RINKESH PATEL
+	h3---> Sub heading
+	h4---> sub sub heading
+	h5---> normal heading
+
+
+*/
 body{
 	font-family: 'Oxygen', sans-serif;
 	color: #8d99ae;
@@ -44,8 +52,7 @@ body{
 }
 
 .section-body .title {
-	/*text-align: justify;*/
-	text-shadow: 1px 1px 3px #ead7ff;
+	/*text-shadow: 1px 1px 3px #ead7ff;*/
     font-size: 1.5em;
 }
 
@@ -77,6 +84,11 @@ body{
 	width: 100%;
 }
 
+.section-body .dropdown-divider.project-end-divider:nth-child(1),
+.section-body .dropdown-divider.award-end-divider:nth-child(1) {
+	display: none;
+}
+
 .section-links {
 	color: #ff4c65;
 }
@@ -97,6 +109,15 @@ body{
 
 .section-links .media-link{
 	font-size: 40px;
+}
+
+#portfolio-section .tag{
+
+}
+
+#portfolio-section .fa-tags{
+	width: 20px;
+	padding-left: 5px;
 }
 
 
@@ -122,6 +143,11 @@ body{
 		padding-right: 10px;
 		min-width: 30px;
 	}
+
+	.section-body .title {
+		text-shadow: 1px 1px 3px #ead7ff;
+	}
+
 
 }
 /*-----Media query ends here------*/
