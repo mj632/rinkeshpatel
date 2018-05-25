@@ -51,11 +51,6 @@ body{
 	font-size: 1.1rem;
 }
 
-.section-body .title {
-	/*text-shadow: 1px 1px 3px #ead7ff;*/
-    font-size: 1.5em;
-}
-
 .section-body .title .miraj-icon {
 	background: url('../images/icons/miraj-icon.jpg') no-repeat;
 }
