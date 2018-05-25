@@ -10,3 +10,5 @@ The frameworks and Languages used in the developement are -
 4) CSS3
 5) Bootstrap v4.0 (Link for Ref. - https://getbootstrap.com/docs/4.1/getting-started/introduction/)
 
+Checkout the website: https://mj632.github.io/rinkeshpatel/
+
