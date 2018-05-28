@@ -1,20 +1,12 @@
-/*
-	h1---> main heading RINKESH PATEL
-	h3---> Sub heading
-	h4---> sub sub heading
-	h5---> normal heading
-
-
-*/
-body{
+body {
 	font-family: 'Oxygen', sans-serif;
 	color: #8d99ae;
 }
+
 #page-navbar.navbar
 {
 	padding-top: 0;
 	padding-bottom: 0;
-	/*margin-bottom: 20px;*/
 }
 
 #main-body
@@ -28,31 +20,75 @@ body{
 	padding: 0px;
 }
 
+#home.page-parts.header-bg-image {
+/*  
+	position: absolute;
+    width: 100%;
+*/
+    background: url('../../assets/images/header-bg.jpg') no-repeat;
+    background-size: 100%;
+    background-color: #343a40;
+}
+
+#home.page-parts.header-bg-image.small-icon{
+   -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: smallIcon;
+    animation-play-state: paused;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#home.page-parts.header-bg-image.image-block{
+   -webkit-animation-duration: 1s;
+    animation-name: homeImage;
+    animation-play-state: paused;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#home .home-img.hide-img{
+    display: none!important;
+}
+
+/*-----Animations here------*/
+@keyframes smallIcon {
+    0%   {	left:0px; top:57px;z-index:1040;
+        	background-size: 100%; background-position: left top;}
+    100% {	left:0px; top:0px;
+            width:57px;min-height:57px;
+            z-index:1040;
+            border-radius:100%;
+            background-size: 500%; background-position: 90%; display: none;
+         }
+}
+@keyframes homeImage {
+    0% 	{	left:0px; top:0px;width:57px;min-height:57px;z-index:1040;border-radius:100%;}
+    50% {	z-index:10;}
+    100%{	left:0px;z-index:10;border-radius:0; display: block;}
+}
+
+
+
 .page-parts
 {
 	min-height: 100px;
-}
-
-.page-parts:nth-child(odd) {
-	background: #343a40;
-	color: #fff;
-}
-
-.page-parts{
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
 
+.page-parts:nth-child(even) {
+	background: #343a40;
+	color: #fff;
+}
+
 .page-parts:nth-child(1){
 	padding-top: 0;
+	background: #343a40;
+	color: #fff;
 }
 
 .section-title, .section-links {
 	font-size: 1.1rem;
-}
-
-.section-body .title .miraj-icon {
-	background: url('../images/icons/miraj-icon.jpg') no-repeat;
 }
 
 .section-body p {
@@ -98,24 +134,22 @@ body{
 	width: 20px;
 }
 
-.portfolio-body {
-	margin-bottom: 10px;
-}
 
-.section-links .media-link{
+/*=================for social meadia icons=======================*/
+.section-links .media-link{	
 	font-size: 40px;
 }
 
-#portfolio-section .tag{
-
-}
-
+/*=================portfolio-section=================*/
 #portfolio-section .fa-tags{
 	width: 20px;
 	padding-left: 5px;
 }
+.portfolio-body {
+	margin-bottom: 10px;
+}
 
-
+/*------------Animation for the page------------*/
 
 
 /*-----Media query------*/
@@ -168,3 +202,4 @@ body::-webkit-scrollbar-thumb
 	background-color: #000;
 }
 /*----scrollbar css ends here-----*/
+

@@ -7,6 +7,10 @@ $(document).ready(function () {
             $('[data-toggle="tooltip"]').tooltip()
         });
     }
+    else if (screenWidth < 575.98) {
+        $('#home.page-parts').removeClass('header-bg-image');
+    }
+
     //-----------min-height of each section
     var windowHeight = $(window)[0].innerHeight - $('#page-navbar')[0].clientHeight;
     $('.page-parts').css("min-height", windowHeight);
@@ -16,23 +20,43 @@ $(document).ready(function () {
         var navIcon = $(this);
         var body = $('body')[0];
         var id = navIcon[0].hash;
-        var scrollTopHeight = $(id).offset().top - $('#page-navbar')[0].clientHeight;
+        var scrollTopHeight = 0;
         var screenWidth = body.clientWidth;
         if (screenWidth < 575.98) {
+            scrollTopHeight = $(id).offset().top - $('#page-navbar')[0].clientHeight;
             scrollTopHeight += $('#mainMenu')[0].clientHeight;
-            $('#mainMenu').collapse('hide');
             $('html,body').animate({scrollTop: scrollTopHeight}, 'slow');
-            console.log(id);
-            console.log(scrollTopHeight);
-            console.log(screenWidth);
+            $('#mainMenu').collapse('hide');
         }
         else {
+            if(id != '#home') {
+                $('.row.img-block-row').css('display', 'block');
+                $('.home-img').addClass("hide-img");
+                $(".home-img").addClass('hide-img');
+                $('.page-parts.header-bg-image').removeClass("image-block");
+                $('.page-parts.header-bg-image').addClass("small-icon");
+                $('.page-parts.header-bg-image').css('animation-play-state','running');
+                $('.page-parts.header-bg-image').addClass("fixed-top");
+                scrollTopHeight = $(id).offset().top - $('#page-navbar')[0].clientHeight;
+            }
+            else {
+                scrollTopHeight = 0;
+                $('.row.img-block-row').css('display', 'flex');
+                $('.page-parts.header-bg-image').removeClass("small-icon");
+                $('.page-parts.header-bg-image').addClass("image-block");
+                $('.home-img').removeClass("hide-img");
+                $('.page-parts.header-bg-image').removeClass("fixed-top");
+                scrollTopHeight = $(id).offset().top - $('#page-navbar')[0].clientHeight;
+            }
             $('html,body').animate({scrollTop: scrollTopHeight}, 'slow');
+
+
         }
     });
     $('#nav-toggle-btn').blur(function(){
       $('#mainMenu').collapse('hide');
     });
+
 //============Highchart starts from here===========//
 var idList = ['Siemens-NX-container',
               'SolidWorks-container',
