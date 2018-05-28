@@ -44,4 +44,20 @@ $(document).ready(function () {
         $('a.nav-link').removeClass('active');
         $("[href=\"#" + id + "\"]").addClass('active');
     });
+//============on scroll when at home from here===========//
+var lastScrollTop = 0;
+$(window).scroll(function(event){
+   var st = $(this).scrollTop();
+   if (st > lastScrollTop){
+    console.log(st);
+       // downscroll code
+   } else {
+    console.log(st);
+      // upscroll code
+   }
+   lastScrollTop = st;
+});
+
+//============on scroll when at home ends here===========//
+
 });
