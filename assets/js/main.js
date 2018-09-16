@@ -42,14 +42,14 @@ $(document).ready(function () {
             else {
                 scrollTopHeight = 0;
                 $('.row.img-block-row').css('display', 'flex');
-                if($isOnload) {
-                    $('.page-parts.header-bg-image').addClass("small-icon");
+                if(!$isOnload) {
+                    $('.page-parts.header-bg-image').removeClass("small-icon");
+                    $('.page-parts.header-bg-image').addClass("image-block");
+                    $('.page-parts.header-bg-image').css('animation-play-state','running');
+                    $('.page-parts.header-bg-image').removeClass("fixed-top");
+                    // $('.page-parts.header-bg-image').addClass("small-icon");
                 }
                 // $('.home-img').removeClass("hide-img");
-                $('.page-parts.header-bg-image').removeClass("small-icon");
-                $('.page-parts.header-bg-image').addClass("image-block");
-                $('.page-parts.header-bg-image').css('animation-play-state','running');
-                $('.page-parts.header-bg-image').removeClass("fixed-top");
                 scrollTopHeight = $(id).offset().top - $('#page-navbar')[0].clientHeight;
             }
             $('html,body').animate({scrollTop: scrollTopHeight}, 'slow');
