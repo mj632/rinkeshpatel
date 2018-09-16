@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    //-----tooltip only for desktop devices
-    $('#main-body').css('margin-top', $('#page-navbar')[0].clientHeight);
+                                        //-----tooltip only for desktop devices
+    // $('#main-body').css('margin-top', $('#page-navbar')[0].clientHeight);
     var screenWidth = window.innerWidth;
     if (screenWidth > 991) {
         $(function () {
@@ -11,15 +11,15 @@ $(document).ready(function () {
         $('#home.page-parts').removeClass('header-bg-image');
     }
 
-    //-----------min-height of each section
+                                        //-----------min-height of each section
     var windowHeight = $(window)[0].innerHeight - $('#page-navbar')[0].clientHeight;
     $('.page-parts').css("min-height", windowHeight);
     //===========Ends here=========//
-    //----------- on click redirect to the section
-    $('.nav-link').click(function () {
-        var navIcon = $(this);
+
+    var redirectToSection = function($window,$isOnload) {
+        var navIcon = $window;
         var body = $('body')[0];
-        var id = navIcon[0].hash;
+        var id = $isOnload? '#home' : navIcon[0].hash;
         var scrollTopHeight = 0;
         var screenWidth = body.clientWidth;
         if (screenWidth < 575.98) {
@@ -31,8 +31,8 @@ $(document).ready(function () {
         else {
             if(id != '#home') {
                 $('.row.img-block-row').css('display', 'block');
-                $('.home-img').addClass("hide-img");
-                $(".home-img").addClass('hide-img');
+                // $('.home-img').addClass("hide-img");
+                // $(".home-img").addClass('hide-img');
                 $('.page-parts.header-bg-image').removeClass("image-block");
                 $('.page-parts.header-bg-image').addClass("small-icon");
                 $('.page-parts.header-bg-image').css('animation-play-state','running');
@@ -42,9 +42,13 @@ $(document).ready(function () {
             else {
                 scrollTopHeight = 0;
                 $('.row.img-block-row').css('display', 'flex');
+                if($isOnload) {
+                    $('.page-parts.header-bg-image').addClass("small-icon");
+                }
+                // $('.home-img').removeClass("hide-img");
                 $('.page-parts.header-bg-image').removeClass("small-icon");
                 $('.page-parts.header-bg-image').addClass("image-block");
-                $('.home-img').removeClass("hide-img");
+                $('.page-parts.header-bg-image').css('animation-play-state','running');
                 $('.page-parts.header-bg-image').removeClass("fixed-top");
                 scrollTopHeight = $(id).offset().top - $('#page-navbar')[0].clientHeight;
             }
@@ -52,6 +56,17 @@ $(document).ready(function () {
 
 
         }
+    
+
+    };
+
+    $(window).on('load', function() {
+        redirectToSection($(this),true);
+    });
+    
+    //----------- on click redirect to the section
+    $('.nav-link').click(function () {
+        redirectToSection($(this),false);
     });
     $('#nav-toggle-btn').blur(function(){
       $('#mainMenu').collapse('hide');
